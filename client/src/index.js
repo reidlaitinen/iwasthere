@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-// COMMENTED UNTIL FIX FOUND import registerServiceWorker from './registerServiceWorker';
+import { register } from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -15,4 +15,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-// COMMENTED UNTIL FIX FOUND registerServiceWorker();
+register();
